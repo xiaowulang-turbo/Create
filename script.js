@@ -14,7 +14,7 @@ const gotoImg = function () {
   });
   curImg++;
 };
-// gotoImg();
+ gotoImg();
 
 const refreshImg = function () {
   setTimeout(function () {
@@ -23,4 +23,4 @@ const refreshImg = function () {
   }, 4000);
 };
 
-// refreshImg();
+ refreshImg();
