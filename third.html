@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topics for you to choose</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header></header>
+
+    <section class="topicChoose">
+      <div class="input__container">
+        <label for="start">Destination && Start date:</label>
+        <div>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value="请输入目的地"
+            required
+            minlength="2"
+            maxlegnth="8"
+          />
+          <input
+            type="date"
+            id="start"
+            name="trip-start"
+            value="2024-02-01"
+            min="2024-01-01"
+            max="2024-12-31"
+          />
+        </div>
+      </div>
+      <div class="img__countries">
+        <div class="img__country">
+          <img src="img/img__country-1.jpg" alt="country" />
+        </div>
+        <div class="img__country">
+          <img src="img/img__country-2.jpg" alt="country" />
+        </div>
+        <div class="img__country">
+          <img src="img/img__country-3.jpg" alt="country" />
+        </div>
+      </div>
+      <div class="imgs__topic">
+        <div class="img__city">
+          <img src="img/img__city.png" alt="city" />
+        </div>
+        <div class="img__countries">
+          <div class="img__country">
+            <img src="img/img__country-1.jpg" alt="country" />
+          </div>
+          <div class="img__country">
+            <img src="img/img__country-2.jpg" alt="country" />
+          </div>
+          <img src="img/img__country-3.jpg" alt="country" />
+          <div class="img__country"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

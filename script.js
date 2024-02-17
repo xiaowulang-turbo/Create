@@ -14,14 +14,13 @@ const gotoImg = function () {
   });
   curImg++;
 };
-gotoImg();
+// gotoImg();
 
 const refreshImg = function () {
   setTimeout(function () {
     gotoImg();
-
     refreshImg();
   }, 4000);
 };
 
-refreshImg();
+// refreshImg();
