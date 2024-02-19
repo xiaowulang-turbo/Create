@@ -1,6 +1,8 @@
 "use strict";
 
 const headerImgs = document.querySelectorAll(".header__img");
+// const countryChoose = document.getElementById("img__country--2");
+const countryChoose1 = document.querySelector("#img__country--2");
 
 let curImg = 0;
 
@@ -14,7 +16,7 @@ const gotoImg = function () {
   });
   curImg++;
 };
- gotoImg();
+// gotoImg();
 
 const refreshImg = function () {
   setTimeout(function () {
@@ -23,4 +25,11 @@ const refreshImg = function () {
   }, 4000);
 };
 
- refreshImg();
+// refreshImg();
+
+// console.log(headerImgs);
+
+// console.log(countryChoose1);
+countryChoose1.addEventListener("click", () => {
+  window.location.href = "./second.html";
+});
