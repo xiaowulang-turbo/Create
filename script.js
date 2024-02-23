@@ -1,6 +1,9 @@
 "use strict";
 
 const headerImgs = document.querySelectorAll(".header__img");
+const btnLearnMore = document.querySelector("#btn__learnMore");
+const btnGo = document.querySelector("#btn__go");
+const countryChoose = document.querySelector("#countryChoose");
 // const countryChoose = document.getElementById("img__country--2");
 const countryChoose1 = document.querySelector("#img__country--1");
 const countryChoose2 = document.querySelector("#img__country--2");
@@ -50,4 +53,12 @@ countryChoose2.addEventListener("click", () => {
 
 countryChoose3.addEventListener("click", () => {
   alert("敬请期待！");
+});
+
+btnLearnMore.addEventListener("click", () => {
+  countryChoose.scrollIntoView({ behavior: "smooth" });
+});
+
+btnGo.addEventListener("click", () => {
+  countryChoose.scrollIntoView({ behavior: "smooth" });
 });
