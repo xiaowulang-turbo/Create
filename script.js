@@ -46,13 +46,11 @@ countryChoose1.addEventListener("click", () => {
 // countryChoose2.addEventListener("mouseleave", () => {
 //   countryChoose2.style.scale = "1.0";
 // });
-
 countryChoose2.addEventListener("click", () => {
-  window.location.href = "./second.html";
-});
-
-countryChoose3.addEventListener("click", () => {
   alert("敬请期待！");
+});
+countryChoose3.addEventListener("click", () => {
+  window.location.href = "./second.html";
 });
 
 btnLearnMore.addEventListener("click", () => {
