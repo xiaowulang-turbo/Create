@@ -10,8 +10,13 @@ const divDetails = document.querySelector(".div__details");
 let status1 = 1;
 
 detailChoose1.addEventListener("click", () => {
-  if (status1) divDetails.classList.remove("hidden");
-  else divDetails.classList.add("hidden");
+  if (status1) {
+    detailChoose1.style.scale = "1.1";
+    divDetails.classList.remove("hidden");
+  } else {
+    divDetails.classList.add("hidden");
+    detailChoose1.style.scale = null;
+  }
   status1 = !status1;
 });
 

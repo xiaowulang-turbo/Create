@@ -10,11 +10,14 @@ const divDetails = document.querySelector(".div__details");
 
 let status4 = 1;
 
-detailChoose4.addEventListener("click", () => {
+detailChoose4.addEventListener("click", (e) => {
+  e.preventDefault();
   if (status4) {
     divDetails.classList.remove("hidden");
+    detailChoose4.style.scale = "1.1";
   } else {
     divDetails.classList.add("hidden");
+    detailChoose4.style.scale = "1.0";
   }
   status4 = !status4;
   // detailChoose.insertAdjacentHTML("beforeend", html);
