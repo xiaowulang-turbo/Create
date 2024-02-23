@@ -36,13 +36,13 @@ const refreshImg = function () {
 countryChoose1.addEventListener("click", () => {
   alert("敬请期待！");
 });
-countryChoose2.addEventListener("mouseover", () => {
-  countryChoose2.style.scale = "1.1";
-});
+// countryChoose2.addEventListener("mouseover", () => {
+//   countryChoose2.style.scale = "1.1";
+// });
 
-countryChoose2.addEventListener("mouseleave", () => {
-  countryChoose2.style.scale = "1.0";
-});
+// countryChoose2.addEventListener("mouseleave", () => {
+//   countryChoose2.style.scale = "1.0";
+// });
 
 countryChoose2.addEventListener("click", () => {
   window.location.href = "./second.html";
