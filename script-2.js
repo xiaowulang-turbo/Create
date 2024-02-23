@@ -24,9 +24,9 @@ topicChoose3.addEventListener("click", () => {
   alert("敬请期待！");
 });
 
-// topicChoose4.addEventListener("click", () => {
-//   window.location.href = "./forth.html";
-// });
+topicChoose4.addEventListener("click", () => {
+  window.location.href = "./forth.html";
+});
 
 // topicChoose4.addEventListener("mouseover", () => {
 //   topicChoose4.style.scale = "1.1";
