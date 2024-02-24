@@ -60,3 +60,11 @@ btnLearnMore.addEventListener("click", () => {
 btnGo.addEventListener("click", () => {
   countryChoose.scrollIntoView({ behavior: "smooth" });
 });
+
+fetch(
+  "https://restapi.amap.com/v3/weather/weatherInfo?key=	df33a176e7e60e130be25b8ff98a2f2d&city=110101"
+)
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+  });

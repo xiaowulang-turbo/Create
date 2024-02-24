@@ -631,7 +631,7 @@ img {
   width: 100%;
 }
 
-/* Section4: Map */
+/* Section 4: Map */
 .section--map {
   height: 120rem;
   /* padding: 5rem 1rem;
@@ -643,6 +643,13 @@ img {
   flex: 1;
   height: 100%;
   background-color: var(--color-light--1);
+}
+
+/* Section 5: Weather */
+#weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*  */
