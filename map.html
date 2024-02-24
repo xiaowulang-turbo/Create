@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>地图</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script defer type="text/javascript">
+      window._AMapSecurityConfig = {
+        securityJsCode: "9196d14e6345778bbcbd6e1f56f043dd",
+      };
+    </script>
+    <script
+      defer
+      type="text/javascript"
+      src="https://webapi.amap.com/maps?v=1.4.15&key=60df4d085e278706a56e7ab950246d20"
+    ></script>
+
+    <script defer src="./script-map.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="./index.html">
+          <img
+            src="img/logo-1.png"
+            alt="Travel logo"
+            class="nav__logo"
+            id="logo"
+            designer="xiaowu"
+            data-version-number="1.0"
+        /></a>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">计划行程</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">观光活动</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">旅游必备</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >登录</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section section--map" id="section--map">
+      <div id="container"></div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <!-- <img src="img/icon.png" alt="Logo" class="footer__logo" /> -->
+      <p class="footer__copyright">
+        &copy; All rights reserved. Copyright by Xiaowu.
+        <!-- <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="#</a
+        >. Use for learning or your portfolio. Don't use to teach. Don't claim
+        as your own product. -->
+      </p>
+    </footer>
+  </body>
+</html>

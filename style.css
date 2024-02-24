@@ -631,6 +631,20 @@ img {
   width: 100%;
 }
 
+/* Section4: Map */
+.section--map {
+  height: 100rem;
+  /* padding: 5rem 1rem;
+  margin: 10rem 1rem; */
+}
+
+/* MAP */
+#container {
+  flex: 1;
+  height: 100%;
+  background-color: var(--color-light--1);
+}
+
 /*  */
 .highlight {
   position: relative;
