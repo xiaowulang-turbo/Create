@@ -266,22 +266,26 @@ img {
   margin: 2rem 1rem;
 }
 
-.input__container label {
-  font-size: 1.8rem;
+/* .input__container label {
   font-weight: 500;
   color: #333;
-  /* margin-bottom: 1rem; */
-}
+} */
 
 .input__field {
-  display: inline-block;
-  border-radius: 0.5rem;
-  border: 2px solid #ccc;
-  padding: 2rem 0rem;
-  font-size: 1.8rem;
+  /* display: inline-block; */
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  padding: 1.8rem 0rem;
+  font-size: 2.2rem;
   font-weight: 500;
   color: #333;
+  text-align: center;
   /* width: 100%; */
+}
+
+#input__city {
+  /* font-size: 2rem; */
+  /* text-align: center; */
 }
 
 /* HEADER */
