@@ -57,13 +57,13 @@ label {
 h1 {
   font-size: 5.5rem;
   line-height: 1.35;
-  color: #222222;
+  color: #fff;
 }
 
 h2 {
   font-size: 3.6rem;
   font-weight: 500;
-  color: #222222;
+  color: #fff;
 }
 
 h4 {
@@ -312,13 +312,9 @@ img {
 }
 
 .header__imgs {
-  /* position: ralative; */
   display: flex;
-  /* flex-direction: row; */
-  /* max-width: 189rem; */
   height: 85rem;
   width: 192rem;
-  /* overflow: hidden; */
 }
 
 .header__img {
