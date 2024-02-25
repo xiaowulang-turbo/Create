@@ -475,6 +475,7 @@ img {
 }
 
 .img__countryChoose--text p {
+  text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
 }
