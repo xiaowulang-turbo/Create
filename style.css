@@ -391,6 +391,18 @@ img {
   width: 100%;
 }
 
+.img__svg {
+  position: absolute;
+  top: 6.5rem;
+  left: 13rem;
+}
+
+.img__svg--icon {
+  height: 4rem;
+  width: 4rem;
+  color: #39b385;
+}
+
 .imgs__countryChoose {
   display: flex;
   gap: 8rem;
