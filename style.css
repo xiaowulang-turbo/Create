@@ -57,13 +57,13 @@ label {
 h1 {
   font-size: 5.5rem;
   line-height: 1.35;
-  color: #fff;
+  color: #222222;
 }
 
 h2 {
   font-size: 3.6rem;
   font-weight: 500;
-  color: #fff;
+  color: #222222;
 }
 
 h4 {
@@ -417,7 +417,26 @@ img {
   font-size: 1.6rem;
 }
 
-/* Section--topicChoose */
+/* Page 2: topicChoose */
+/* section__2--1 */
+.section__2--1 {
+  display: flex;
+  gap: 30rem;
+  justify-content: center;
+}
+
+.weather__side h1,
+.weather__side h2 {
+  color: #0f0e0e;
+}
+
+/* weather container */
+.weather__container {
+  width: 40rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
 .topicChoose {
   margin: 2rem 1rem 10rem 1rem;
   display: flex;
@@ -634,8 +653,14 @@ img {
 /* Section 4: Map */
 .section--map {
   height: 120rem;
+  margin: 0;
+  padding: 0;
   /* padding: 5rem 1rem;
   margin: 10rem 1rem; */
+}
+
+#footer__map {
+  margin-top: 0;
 }
 
 /* MAP */
