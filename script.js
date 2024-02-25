@@ -3,6 +3,8 @@
 const headerImgs = document.querySelectorAll(".header__img");
 const btnLearnMore = document.querySelector("#btn__learnMore");
 const btnGo = document.querySelector("#btn__go");
+const inputCity = document.getElementById("input__city");
+
 const countryChoose = document.querySelector("#countryChoose");
 // const countryChoose = document.getElementById("img__country--2");
 const countryChoose1 = document.querySelector("#img__country--1");
@@ -57,14 +59,23 @@ btnLearnMore.addEventListener("click", () => {
   countryChoose.scrollIntoView({ behavior: "smooth" });
 });
 
+// if (inputCity.value == "") {
+//   btnGo.disabled = "true";
+// }
+
 btnGo.addEventListener("click", () => {
-  countryChoose.scrollIntoView({ behavior: "smooth" });
+  if (inputCity.value === "") {
+    alert("请先输入目的地!");
+  }
+  if (inputCity.value !== "") {
+    countryChoose.scrollIntoView({ behavior: "smooth" });
+  }
 });
 
-fetch(
-  "https://restapi.amap.com/v3/weather/weatherInfo?key=	df33a176e7e60e130be25b8ff98a2f2d&city=110101"
-)
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-  });
+// fetch(
+//   "https://restapi.amap.com/v3/weather/weatherInfo?key=	df33a176e7e60e130be25b8ff98a2f2d&city=110101"
+// )
+//   .then((res) => res.json())
+//   .then((data) => {
+//     console.log(data);
+//   });

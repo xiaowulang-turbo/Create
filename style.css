@@ -208,11 +208,11 @@ img {
 
 .nav__logo {
   height: 4.5rem;
-  transition: all 0.3s;
+  /* transition: all 0.5s; */
 }
-.nav__logo:hover {
+/* .nav__logo:hover {
   transform: scale(1.15);
-}
+} */
 
 .nav__link {
   padding: 0.5rem 1.5rem;
@@ -291,6 +291,16 @@ img {
   height: 105rem;
   /* width: 189rem; */
   align-items: center;
+}
+
+.img__logos {
+  display: flex;
+  /* gap: 0.5rem; */
+}
+
+.img__logos:hover {
+  scale: 1.1;
+  transition: all 0.5s;
 }
 
 .header__container {
@@ -477,9 +487,9 @@ img {
   justify-content: start;
   padding: 0 7rem;
   margin: 0 2rem;
-  border-right: #0f0e0e 1px solid;
+  border-right: #0f0e0e 1px dashed;
   max-width: 50rem;
-  height: 80rem;
+  height: 85rem;
   gap: 2rem;
   /* align-items: center; */
   /* justify-content: center; */
@@ -583,6 +593,10 @@ img {
   justify-content: center;
 }
 
+.detail__text h2 {
+  color: #313131;
+}
+
 .img__details {
   /* display: none; */
   display: flex;
@@ -635,15 +649,7 @@ img {
 }
 
 .div__details {
-  /* width: auto; */
-  /* display: none; */
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* gap: 5rem; */
-  /* transition: all 0.5s ease-out; */
   animation: hid 1s ease;
-  /* align-items: start; */
-  /* justify-content: start; */
 }
 
 @keyframes hid {
@@ -666,8 +672,9 @@ img {
   padding: 3rem auto;
   border: #ffb003 solid 1px;
   border-radius: 1rem;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   margin-right: 3rem;
+  /* border-right: #0f0e0e 1px solid; */
 }
 
 .pic__details {
@@ -687,6 +694,7 @@ img {
 
 .pic__detail img {
   width: 100%;
+  border-radius: 0.5rem;
 }
 
 /* Section 4: Map */

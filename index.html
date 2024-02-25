@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TRAVEL·NOW</title>
+    <title>TRAVEL·NOW 即刻游旅行攻略网</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
     <script
       defer
       type="module"
@@ -22,14 +23,25 @@
     <header class="header">
       <nav class="nav">
         <a href="#">
-          <img
-            src="img/logo-1.png"
-            alt="Travel logo"
-            class="nav__logo"
-            id="logo"
-            designer="xiaowu"
-            data-version-number="1.0"
-        /></a>
+          <div class="img__logos">
+            <img
+              src="img/logo-1.png"
+              alt="Travel logo-1"
+              class="nav__logo"
+              id="logo1"
+              designer="xiaowu"
+              data-version-number="1.0"
+            />
+            <img
+              src="img/logo-2.png"
+              alt="Travel logo-2"
+              class="nav__logo"
+              id="logo2"
+              designer="xiaowu"
+              data-version-number="1.0"
+            />
+          </div>
+        </a>
         <ul class="nav__links">
           <li class="nav__item">
             <a class="nav__link" href="#section--1">计划行程</a>
@@ -62,9 +74,10 @@
             <input
               class="input__field"
               type="text"
-              id="name"
+              id="input__city"
+              value="大理"
               name="name"
-              placeholder="请输入目的地"
+              placeholder="请输入目的地（如“大理”）"
               required="required"
               minlength="2"
               maxlegnth="8"
@@ -73,6 +86,7 @@
               class="input__field"
               type="date"
               id="start"
+              placeholder="time"
               name="trip-start"
               value="2024-03-01"
               min="2024-02-01"
