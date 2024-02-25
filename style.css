@@ -74,6 +74,7 @@ h4 {
 .hidden {
   display: none;
   transition: all 0.5s ease-in-out;
+  /*  */
 }
 
 /* GENERAL ELEMENTS */
@@ -432,6 +433,12 @@ img {
   border-radius: 1rem;
   overflow: hidden;
 }
+
+.section__city--introduction h2 {
+  color: #313131;
+  text-align: center;
+}
+/*  */
 
 .topicChoose {
   margin: 2rem 1rem 10rem 1rem;
