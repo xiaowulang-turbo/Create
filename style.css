@@ -168,9 +168,9 @@ h5 {
   color: #f3f3f3;
 }
 
-p {
+/* p {
   color: #666;
-}
+} */
 
 /* This is BAD for accessibility! Don't do in the real world! */
 button:focus {
@@ -414,7 +414,7 @@ img {
 .img__svg--icon {
   height: 4rem;
   width: 4rem;
-  color: #39b385;
+  fill: #39b385;
 }
 
 .imgs__countryChoose {
@@ -489,10 +489,10 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 0 7rem;
+  padding: 5rem 10rem 0 3rem;
   margin: 0 2rem;
   border-right: #0f0e0e 1px dashed;
-  max-width: 50rem;
+  max-width: 55rem;
   height: 85rem;
   gap: 2rem;
   /* align-items: center; */
@@ -513,10 +513,10 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
-.img__countryChoose--text h2 {
+.countryChoose__text--h2 {
   color: black;
   /* font-size: 1.8rem;
   font-weight: 600; */
@@ -537,15 +537,24 @@ img {
 
 .img__topics {
   /* position: absolute; */
-  max-width: 60rem;
-  padding: 2rem 1rem;
+  height: 90rem;
+  max-width: 65rem;
+  padding: 2rem 3rem;
   margin: 2rem 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 7rem;
+  grid-template-rows: 1fr 8fr 8fr;
+  column-gap: 7rem;
+  row-gap: 5rem;
   /* transform: translateY(-10rem); */
   /* bottom: -5rem; */
   /* right: 0; */
+}
+
+.img__topics h2 {
+  justify-self: center;
+  grid-row: 1/2;
+  grid-column: 1/3;
 }
 
 .imgs__topic {
@@ -653,6 +662,7 @@ img {
 }
 
 .div__details {
+  /* display: flex; */
   animation: hid 1s ease;
 }
 
@@ -666,8 +676,10 @@ img {
 }
 
 .text__details {
-  /* display: float; */
   float: left;
+  /* display: flex;
+  flex-direction: column;
+  gap: 0.8rem; */
   /* display: inline-block; */
   width: 40rem;
   height: 42.5rem;
@@ -678,7 +690,16 @@ img {
   border-radius: 1rem;
   padding: 2rem 2rem;
   margin-right: 3rem;
-  /* border-right: #0f0e0e 1px solid; */
+  color: #222;
+}
+
+.text__details--p1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.text__details--p2 {
+  font-size: 2.2rem;
+  font-weight: 500;
 }
 
 .pic__details {
