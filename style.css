@@ -3,6 +3,7 @@
 :root {
   --color-primary: #5ec576;
   /* --color-primary: #69db7c; */
+  --color-primary-blue: #74c0fc;
 
   --color-secondary: #ffcb03;
   --color-tertiary: #ff585f;
@@ -482,12 +483,13 @@ img {
 /* section__2--1 */
 .section__2--1 {
   display: flex;
-  gap: 50rem;
+  gap: 65rem;
   justify-content: center;
 }
 
 .weather__side h1,
 .weather__side h2 {
+  font-family: "Noto Serif SC";
   color: #0f0e0e;
 }
 
@@ -525,7 +527,7 @@ img {
 .city__navs {
   margin-top: 5rem;
   padding-top: 5rem;
-  border-top: #474747 1px dashed;
+  border-top: #474747 3px dashed;
   display: flex;
   justify-content: center;
   gap: 25rem;
@@ -543,7 +545,7 @@ img {
 .city__logos--anchor {
   /* display: none; */
   text-decoration: none;
-  color: #39b385;
+  color: #74c0fc;
 }
 
 /* topicChoose */
