@@ -14,26 +14,37 @@
       <nav class="nav">
         <div class="img__logos">
           <a href="./index.html">
-            <img src="img/logo-6.png" alt="Travel logo-1" class="nav__logo"
-            id="logo1" designer="xiaowu" data-version-number="1.0"
+            <img
+              src="img/logo-6.png"
+              alt="Travel logo-1"
+              class="nav__logo"
+              id="logo1"
+              designer="xiaowu"
+              data-version-number="1.0"
+            />
           </a>
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a class="nav__link" href="#section--1">观光&活动</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--2">计划您的旅程</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--3">旅游必备信息</a>
+            </li>
+          </ul>
         </div>
-        <ul class="nav__links">
-          <li class="nav__item">
-            <a class="nav__link" href="#section--1">计划行程</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--2">观光活动</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--3">旅游必备</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--btn btn--show-modal" href="#"
-              >登录</a
-            >
-          </li>
-        </ul>
+        <div class="nav__icons">
+          <a href="./map.html" target="_blank">
+            <img src="./img/icon/location.svg" class="nav__icon" />
+          </a>
+          <a href="#nav__input">
+            <img src="./img/icon/search.svg" class="nav__icon"
+          /></a>
+          <a href="#"> <img src="./img/icon/person.svg" class="nav__icon" /></a>
+          <input class="nav__input" id="nav__input" />
+        </div>
       </nav>
     </header>
 
@@ -76,30 +87,32 @@
     </section>
 
     <footer class="footer">
-      <ul class="footer__nav">
-        <li class="footer__item">
-          <a class="footer__link" href="#">About</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Pricing</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Terms of Use</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Privacy Policy</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Careers</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Blog</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Contact Us</a>
-        </li>
-      </ul>
-      <!-- <img src="img/icon.png" alt="Logo" class="footer__logo" /> -->
+      <div class="footer__flex">
+        <div class="footer__call">
+          <div class="footer__header">
+            <img src="./img/icon/call.svg" class="footer__icon" />
+            <div>
+              <p class="footer__header--text">联系我们</p>
+            </div>
+          </div>
+          <div class="footer__text">
+            <p>中国: 400-000-0000</p>
+            <p>邮箱: Travelnow@163.com</p>
+          </div>
+        </div>
+
+        <div class="footer__pay">
+          <div class="footer__header">
+            <img src="./img/icon/wallet.svg" class="footer__icon" />
+            <p class="footer__header--text">付款方式</p>
+          </div>
+          <div class="footer__pay--icons">
+            <img src="./img/icon/alipay.svg" class="footer__icon" />
+            <img src="./img/icon/wechat.svg" class="footer__icon" />
+            <img src="./img/icon/card.svg" class="footer__icon" />
+          </div>
+        </div>
+      </div>
       <p class="footer__copyright">
         &copy; 2024 by Xiaowu. All rights reserved.
       </p>
