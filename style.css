@@ -540,6 +540,14 @@ img {
   text-align: center;
 }
 
+.city__logos--anchor {
+  /* display: none; */
+  text-decoration: none;
+  color: #39b385;
+}
+
+/* topicChoose */
+
 .topicChoose {
   margin: 2rem 1rem 10rem 1rem;
   display: flex;
