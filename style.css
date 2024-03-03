@@ -530,7 +530,7 @@ img {
 
 /* Section of city--introduction */
 .section__city--introduction {
-  padding: 15rem 15rem;
+  padding: 12rem 15rem 15rem 15rem;
   background-image: url("./img/back-6.jpg");
 }
 
@@ -540,7 +540,7 @@ img {
   font-weight: 600;
   color: #313131;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 /* city--navs */
