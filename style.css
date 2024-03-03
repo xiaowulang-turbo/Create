@@ -32,6 +32,7 @@ html {
 
 body {
   /* width: 189rem; */
+  text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: #444;
@@ -173,6 +174,18 @@ h5 {
   color: #f3f3f3;
 }
 
+.btn__go--last {
+  background-color: var(--color-primary);
+  font-size: 2.2rem;
+  padding: 2rem 5rem;
+  border-radius: 1rem;
+  margin: 5rem;
+}
+
+.btn__go--last:hover {
+  cursor: pointer;
+}
+
 /* p {
   color: #666;
 } */
@@ -216,6 +229,7 @@ img {
 
 .nav__input {
   border-radius: 3rem;
+  font-size: 1.8rem;
 }
 
 /* nav and stickly class at the same time */
@@ -516,8 +530,8 @@ img {
 
 /* Section of city--introduction */
 .section__city--introduction {
-  padding: 10rem 15rem;
-  background-image: url("./img/back-2.png");
+  padding: 15rem 15rem;
+  background-image: url("./img/back-6.jpg");
 }
 
 .section__city--introduction h2 {
