@@ -499,12 +499,13 @@ img {
 
 .weather__side {
   position: absolute;
-  top: 30%;
+  top: 28%;
   left: 12%;
 }
 
 .weather__side h1,
 .weather__side h2 {
+  text-shadow: #313131;
   font-family: "Noto Serif SC";
   color: #fff;
 }
@@ -512,8 +513,8 @@ img {
 /* weather container */
 .weather__container {
   position: absolute;
-  top: 28%;
-  right: 12%;
+  top: 38%;
+  left: 6%;
   /* height: 25rem; */
   padding-top: 12rem;
   padding-left: 10rem;
