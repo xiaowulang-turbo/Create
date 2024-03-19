@@ -838,6 +838,17 @@ img {
   border-radius: 0.5rem;
 }
 
+.btn--go-last {
+  height:6rem;
+  width:16rem;
+  border-radius: 2rem;
+  margin-top:2.5rem;
+  padding:0;
+  padding-left:1rem;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
 /* Section 4: Map */
 .section--map {
   height: 120rem;
