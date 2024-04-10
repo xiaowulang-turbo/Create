@@ -28,11 +28,10 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  text-align: center;
+  /* text-align: center; */
 }
 
 body {
-  /* width: 189rem; */
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: #444;
@@ -52,13 +51,6 @@ label {
   padding: 1rem 0rem;
   margin: 0.5rem 0rem;
 }
-
-/* input,
-label {
-  border-radius: 1rem;
-  padding: 1rem 0.5rem;
-  margin: 0.5rem 0.5rem;
-} */
 
 h1 {
   font-size: 5.5rem;
@@ -98,7 +90,6 @@ h5 {
 .section {
   padding: 15rem 3rem;
   border-top: 1px solid #ddd;
-
   transition: transform 1s, opacity 1s;
 }
 
@@ -174,11 +165,6 @@ h5 {
   color: #f3f3f3;
 }
 
-/* p {
-  color: #666;
-} */
-
-/* This is BAD for accessibility! Don't do in the real world! */
 button:focus {
   outline: none;
 }
@@ -195,20 +181,14 @@ img {
 .nav {
   display: flex;
   justify-content: space-between;
-  /* gap: 20rem; */
   align-items: center;
   height: 6rem;
   width: 100%;
   padding: 0 6rem;
-  z-index: 100;
-  /* position: sticky;
-  top: 0; */
-  /*added*/
   background-color: #fff;
 }
 
 .nav__icons {
-  /* width: 50rem; */
   height: 6rem;
   display: flex;
   gap: 3rem;
@@ -223,12 +203,10 @@ img {
 .nav.sticky {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
-  /* background-color: rgba(255, 255, 255, 0.95); */
 }
 
 .nav__logo {
   height: 4.5rem;
-  /* transition: all 0.5s; */
 }
 
 .nav__icon {
@@ -243,10 +221,6 @@ img {
 .nav__input {
   text-align: center;
 }
-
-/* .nav__logo:hover {
-  transform: scale(1.15);
-} */
 
 .nav__link {
   padding: 0.5rem 1.5rem;
@@ -300,13 +274,7 @@ img {
   margin: 2rem 1rem;
 }
 
-/* .input__container label {
-  font-weight: 500;
-  color: #333;
-} */
-
 .input__field {
-  /* display: inline-block; */
   border-radius: 1rem;
   border: 1px solid #ccc;
   padding: 1.8rem 0rem;
@@ -314,21 +282,17 @@ img {
   font-weight: 500;
   color: #333;
   text-align: center;
-  /* width: 100%; */
 }
 
 /* HEADER */
 .header {
-  /* padding: 0rem 3rem; */
   margin-bottom: 2rem;
   height: 100rem;
-  /* width: 189rem; */
   align-items: center;
 }
 
 .img__logos {
   display: flex;
-  /* gap: 0.5rem; */
 }
 
 .img__logos img:hover {
@@ -337,11 +301,9 @@ img {
 }
 
 .header__container {
-  position: ralative;
-  max-height: 108rem;
-  /* max-width: 192rem; */
+  position: relative;
+  height: 108rem;
   align-items: center;
-  /* justify-items: start; */
   justify-content: center;
   overflow: hidden;
 }
@@ -349,16 +311,13 @@ img {
 .header__title {
   position: absolute;
   display: flex;
-  /* flex: 1; */
-  top: 22rem;
-  left: 33%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   flex-direction: column;
-  /* grid-template-columns: 3fr 2fr; */
   row-gap: 3rem;
   align-items: center;
-  /* justify-items: start; */
   justify-content: center;
-  /* overflow: hidden; */
   z-index: 2;
 }
 
@@ -368,17 +327,20 @@ img {
 
 .header__imgs {
   display: flex;
-  height: 85rem;
-  width: 192rem;
+  max-height: 85rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 .header__imgs-2 {
   display: flex;
-  height: 92rem;
-  width: 192rem;
+  max-height: 92rem;
+  width: 100%;
 }
 
 .header__img {
+  margin-top: -50px;
+  flex-shrink: 0;
   width: 100%;
   animation: run 30s 5s ease infinite;
 }
@@ -402,31 +364,20 @@ img {
 }
 
 .countryChoose {
-  /* padding: 2rem 0; */
-  /* margin-top: 10rem; */
   padding: 2rem 1rem 10rem 1rem;
   margin: 10rem 0 30rem 0;
   position: relative;
   display: flex;
   flex-direction: column;
   height: 50rem;
-  /* width: 188rem; */
-  /* overflow: hidden; */
   align-items: center;
-  /* justify-content: space-between; */
-  /* gap: -10rem; */
 }
 
 .img__city {
+  width: 75vw;
   position: relative;
-  /* display: block; */
   max-height: 50rem;
-  max-width: 130rem;
-  /* height: auto;
-  width: auto; */
-  /* height: 5rem;
-  width: 5rem; */
-  /* overflow: hidden; */
+  max-width: 200rem;
 }
 
 .img__city h2 {
@@ -461,11 +412,9 @@ img {
 .img__country {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   max-width: 33rem;
   max-height: 28rem;
-  /* overflow: hidden; */
   padding: 0.5rem;
   background-color: #f3f3f3;
   border-radius: 1rem;
@@ -490,12 +439,7 @@ img {
 /* section__2--1 */
 .section__2--1 {
   padding: 0;
-  /* padding-bottom: 5rem; */
   position: relative;
-  /* display: flex; */
-  /* gap: 65rem; */
-  /* justify-content: center; */
-  /* background-image: url("./img/back-1.png"); */
 }
 
 .weather__side {
@@ -516,17 +460,12 @@ img {
   position: absolute;
   top: 38%;
   left: 6%;
-  /* height: 25rem; */
   padding-top: 12rem;
   padding-left: 10rem;
-  /* height: 25rem; */
   width: 40rem;
-  /* border-radius: 1rem; */
-  /* overflow: hidden; */
 }
 
 #ww_5a8b95b686b74 {
-  /* padding-left: 10rem; */
   border-radius: 1rem;
 }
 
@@ -582,23 +521,15 @@ img {
 
 .img__countryChoose {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
-  /* padding: 5rem 10rem 0 3rem; */
   margin: 0 2rem;
   border-radius: 1rem;
-  /* border-right: #0f0e0e 1px dashed; */
   width: 50rem;
-  /* height: 85rem; */
-  /* gap: 2rem; */
   overflow: hidden;
 }
 
 .img__countryChoose img {
-  /* height: 100%; */
   width: 100%;
-  /* display: block; */
-  /* border-radius: 1rem; */
   animation: run1 15s 2s ease infinite;
 }
 
@@ -631,17 +562,13 @@ img {
 
 .countryChoose__text--h2 {
   color: black;
-  /* font-size: 1.8rem;
-  font-weight: 600; */
 }
 
 .img__countryChoose--text h4 {
   font-family: "Noto Serif SC";
-
   color: black;
   text-align: center;
   font-size: 2.8rem;
-  /* font-weight: 600;  */
 }
 
 .img__countryChoose--text p {
@@ -651,7 +578,6 @@ img {
 }
 
 .img__topics {
-  /* position: absolute; */
   height: 90rem;
   max-width: 65rem;
   min-width: 45rem;
@@ -662,9 +588,6 @@ img {
   grid-template-rows: 1fr 8fr 8fr;
   column-gap: 7rem;
   row-gap: 5rem;
-  /* transform: translateY(-10rem); */
-  /* bottom: -5rem; */
-  /* right: 0; */
 }
 
 .img__topics h2 {
@@ -678,7 +601,6 @@ img {
   margin: 2rem 1rem;
   display: flex;
   flex-direction: row;
-  /* display: grid; */
   align-items: center;
   justify-content: center;
   gap: 5rem;
@@ -691,7 +613,6 @@ img {
   gap: 0.8rem;
   max-height: 38rem;
   max-width: 24rem;
-  /* padding-bottom: 1rem; */
 }
 
 .img__topic p {
@@ -701,7 +622,6 @@ img {
 
 .img__topic img {
   border-radius: 1rem;
-  /* padding-bottom: 1rem; */
   box-shadow: #bbbbbb 0.5rem 0.5rem 0.5rem 1px;
   width: 100%;
 }
@@ -736,28 +656,18 @@ img {
 }
 
 .img__detail {
-  /* display: inline-block; */
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 30rem;
   max-height: 50rem;
-
-  /* overflow: hidden; */
-
-  /* padding: 2rem; */
 }
 
 .img__detail p {
-  /* position: absolute;
-  top: 36%;
-  left: 33%; */
   font-family: "Noto Serif SC", serif;
   font-size: 3.2rem;
   font-weight: 700;
   letter-spacing: 0.3rem;
-  /* line-height: 3.4rem; */
-  /* background-color: #000000; */
   color: #313131;
 }
 
@@ -771,14 +681,13 @@ img {
   height: 100%;
   border-radius: 1rem;
   box-shadow: #969595 0.5rem 0.5rem 0.5rem 1px;
-  /* object-fit: cover; */
 }
 .img__detail img:hover {
   box-shadow: #474747 0.5rem 0.5rem 0.5rem 1px;
 }
 
 .div__details {
-  /* display: flex; */
+  text-align: center;
   animation: hid 1s ease;
 }
 
@@ -793,10 +702,6 @@ img {
 
 .text__details {
   float: left;
-  /* display: flex;
-  flex-direction: column;
-  gap: 0.8rem; */
-  /* display: inline-block; */
   width: 40rem;
   height: 42.5rem;
   font-size: 1.8rem;
@@ -817,6 +722,9 @@ img {
   font-size: 2.2rem;
   font-weight: 500;
 }
+.text__details--p3 {
+  text-align: start;
+}
 
 .pic__details {
   display: flex;
@@ -824,9 +732,6 @@ img {
   border: #e5e982 solid 2px;
   border-radius: 1rem;
   padding: 2rem 1rem;
-  /* display: flex;
-  flex-direction: row; */
-  /* gap: 5rem; */
 }
 
 .pic__detail {
@@ -839,12 +744,13 @@ img {
 }
 
 .btn--go-last {
-  height:6rem;
-  width:16rem;
+  align-self: center;
+  height: 6rem;
+  width: 16rem;
   border-radius: 2rem;
-  margin-top:2.5rem;
-  padding:0;
-  padding-left:1rem;
+  margin-top: 2.5rem;
+  padding: 0;
+  padding-left: 1rem;
   font-size: 2.4rem;
   text-align: center;
 }
@@ -854,8 +760,6 @@ img {
   height: 120rem;
   margin: 0;
   padding: 0;
-  /* padding: 5rem 1rem;
-  margin: 10rem 1rem; */
 }
 
 #footer__map {
