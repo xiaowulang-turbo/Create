@@ -1,6 +1,5 @@
 {
   "liveServer.settings.port": 5501,
-  "cSpell.words": [
-    "imgs"
-  ]
+  "cSpell.words": ["imgs"],
+  "Codegeex.CommitMessageStyle": "ConventionalCommits"
 }
