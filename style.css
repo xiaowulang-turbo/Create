@@ -302,7 +302,6 @@ img {
 
 .header__container {
   position: relative;
-  height: 108rem;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -334,15 +333,18 @@ img {
 
 .header__imgs-2 {
   display: flex;
-  max-height: 92rem;
+  max-height: 100rem;
   width: 100%;
 }
 
 .header__img {
-  margin-top: -50px;
   flex-shrink: 0;
   width: 100%;
   animation: run 30s 5s ease infinite;
+
+  img {
+    width: 100%;
+  }
 }
 
 @keyframes run {
